@@ -1,5 +1,4 @@
-const { get } = require('../routes');
-const blogPosts = require('/blog.data');
+const blogPosts = require('./blog.data');
 
 const blogController = {
     getAllPosts: (req, res) => {
