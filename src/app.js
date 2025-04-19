@@ -1,19 +1,21 @@
-const express = require('express')
-const routes = require('./routes')
+const express = require("express");
+const routes = require("./routes");
+const bodyParser = require("body-parser");
 
-const app = express()
+const app = express();
 
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(bodyParser);
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the Blog API")
-})
+  res.send("Welcome to the Blog API");
+});
 
-app.use(routes)
+app.use(routes);
 
-const port = 8080
+const port = 8080;
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`)
-})
+  console.log(`Server is running on port ${port}`);
+});
