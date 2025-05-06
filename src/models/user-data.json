@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "name": "Fake User",
+        "email": "fakeuser@fake.com",
+        "password": "fakepass"
+    }
+]
